@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I know I didn't really ask you properly so...</title>
+  <style>
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      linear-gradient(135deg, #f3e5f5, #ce93d8);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center; 
+      align-items: center;   
+      text-align: center;     
+      overflow: hidden;
+    }
+    
+    .conatiner {
+      background-color: white;
+      padding: 30px;
+      border-radius 20ps;
+      box-shadow: 0 10px 25px rbga(0,0,0,0.1);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #4a4a4a;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
+      height: 50px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.1s ease;
+    }
+
+    #yesBtn {
+      background-color: #ff4d6d;
+      color: white;
+      z-index: 10;
+    }
+
+    #noBtn {
+      background-color: #6c757d;
+      color: white;
+      left: 55%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>I know I never got to properly ask you so... </h1>
+    <p>Will you go to homecoming with me love?</p>
+    <div class="btn-container>
+      <button id="yesBtn" onclick="sayYes()"> Yes!!! </button>
+      <button id="noBtn" onmouseover="moveNoButton()" onclicks="moveNoButton()">No...</button>
+    </div>
+  </div>
+
+  <script>
+    function sayYes() {
+      alert("YAYYY! I cant wait");
+    }
+    function moveNoButton() {
+      const noBtn = document.getElementById('noBtn');
+      const randomX = Math.floor(Math.random() * (window.innerWidth - noBtn.offsetWidth));
+      const randomY = Math.floor(Math.random() * (window.innerHeight - noBtn.offsetHeight));
+      noBtn.sytle.postition = 'fixed;
+      nobtn.style.left = randomX + 'px';
+      noBtn.style.top = randomY + 'px';
+    }
+  </script>
+  y>
+  l>
+  
